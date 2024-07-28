@@ -36,5 +36,17 @@ public class TurtlesTest {
         Assert.assertEquals(24, turtles.gcd(408, 216));
     }
 
+    @Test
+    public void lcsTest(){
+        Turtles turtles = new Turtles();
+        Assert.assertEquals("GGCAACG",turtles.lcs("GGCACCACG", "ACGGCGGATACG"));
+    }
+
+    @Test
+    public void lcsTest2(){
+        Turtles turtles = new Turtles();
+        Assert.assertEquals("GCGCG",turtles.lcs("GCCCTAGCG", "GCGCAATG"));
+    }
+
 
 }
